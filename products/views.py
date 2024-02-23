@@ -96,6 +96,8 @@ def cart(request):
     messages.success(request,'Ürün sepetden kaldırıldı')
     return redirect('cart')
   
+#yorum satırı
+
   if 'update' in request.POST:
     sepet = Sepet.objects.get(id = request.POST.get('cartId'))
     adetForm = int(request.POST.get('adetForm'))
