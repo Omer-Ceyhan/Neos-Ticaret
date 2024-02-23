@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+{%load static%}
+
+{% block title %}
+<title>Neos Ticaret | Giriş Yap</title>
+{% endblock title %}
+
+{% block content %}
+<form action="" method="POST" class="w-50 m-auto border-4 p-4 mt-5 ">
+{% csrf_token %}
+<label for="">Kullanıcı Adi</label>
+<input type="text" name="kullanici_form" id="" class="form-control">
+<label for="">Şifre</label>
+<input type="password" name="sifre_form" id="" class="form-control">
+<input type="submit" value="Giriş yap" class="btn btn-primary mt-2"> 
+
+
+
+</form>
+
+
+
+{% endblock content %}

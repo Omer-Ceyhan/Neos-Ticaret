@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+{%load static%}
+
+
+  {% block title %}
+    <title>Neos Ticaret | {{product.name}}</title>
+  {% endblock title %}
+
+
+
+  {% block content %}
+      <div class="row">
+        <div class="col-md-4">
+          <img src="{{product.image.url}}" width="100%" alt="">
+        </div>
+          <div class="col-md-8 text-white" >
+            <h2>{{product.name}}</h2>
+            <p>{{product.content|safe}}</p>
+            <p>{{product.price}} ₺</p>
+          </div>
+      
+  
+
+      </div>
+
+  {% endblock content %}

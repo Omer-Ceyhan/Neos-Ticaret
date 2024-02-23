@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block title %}
+<title>Neos Ticaret | Kayıt Ol</title>
+{% endblock title %}
+
+{% block content %}
+  <form action="" method="POST" class="w-50 m-auto border p-4">
+    {% csrf_token %}
+    {{form}}
+    <input class="btn btn-primary mt-2" value="Kayıt Ol" type="submit">
+
+
+  </form>
+{% endblock content %}
+
